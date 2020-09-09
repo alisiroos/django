@@ -1,0 +1,16 @@
+{% load static %}
+<!doctype html>
+<html lang="en" dir="ltr">
+<head>
+    <title>mother fucker articles</title>
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+    <h1>so fucking hard</h1>
+    {% for a in article %}
+        <h2><a href="#">{{ a.title }}</a></h2>
+        <p>{{ a.snippet }}</p>
+        <p>{{ a.date }}</p>
+    {% endfor %}
+</body>
+</html>
